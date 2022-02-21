@@ -79,10 +79,51 @@
   background-size: cover;
   width: 380px;
   height: 380px;
+  position: relative;
+  transition: all 0.4s ease;
 }
 .product__card:hover .product__img {
   background-image: url('https://cdn.shopify.com/s/files/1/0272/1493/8165/products/9_903bd6e5-4773-4b43-8e5c-053061f35e15_425x425.jpg?v=1603253186');
+  transition: all 0.4s ease;
 }
 .product__cards {
   @include list-style();
+}
+
+.product__ikons {
+  @include list-style();
+  position: absolute;
+  bottom: 16px;
+  left: 38%;
+  transform: translateY(60%);
+}
+.product__ikon {
+  margin-right: 10px;
+}
+.product__bx {
+  padding: 12px;
+  text-align: center;
+  background-color: $bg-color;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #0003;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  color: $text-color;
+  opacity: 0;
+  font-weight: 600;
+}
+.product__bx:hover {
+  background-color: $bg-header-btn;
+  color: $bg-color;
+  transition: all 0.3s ease;
+}
+
+.product__card:hover .product__heart {
+  opacity: 1;
+  transform: translateY(-30px);
+}
+.product__card:hover .product__search {
+  opacity: 1;
+  transform: translateY(-30px);
+  transition: all 0.5s ease-in-out;
 }
