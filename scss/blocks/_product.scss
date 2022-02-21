@@ -72,7 +72,7 @@
   transition: all 0.3s ease;
 }
 
-.product__card {
+.product__img {
   position: relative;
   background-image: url('https://cdn.shopify.com/s/files/1/0272/1493/8165/products/15_85ddb99d-27d8-4425-9640-ca6307daade2_425x425.jpg?v=1603253183');
   background-repeat: no-repeat;
@@ -80,7 +80,7 @@
   width: 380px;
   height: 380px;
 }
-.product__card:hover {
+.product__card:hover .product__img {
   background-image: url('https://cdn.shopify.com/s/files/1/0272/1493/8165/products/9_903bd6e5-4773-4b43-8e5c-053061f35e15_425x425.jpg?v=1603253186');
 }
 .product__cards {
