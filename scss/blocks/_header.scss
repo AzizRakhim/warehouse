@@ -387,7 +387,7 @@ input[type="text"]{
   opacity: 1;
   height: 262px;
   padding: 7px 0 20px;
-  z-index: 1;
+  z-index: 100000;
 }
 
 .setting-title{
@@ -481,6 +481,10 @@ input[type="text"]{
   }
 }
 
+.nav-item-hidden{
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
   .header__search{
     max-width: 440px !important;
@@ -488,6 +492,11 @@ input[type="text"]{
 }
 
 @media screen and (max-width: 992px) {
+  .header-intro{
+    padding-top: 13px;
+    padding-bottom: 10px;
+  }
+  
   .header__search{
     max-width: 420px !important;
     margin-left: 15px;
@@ -514,6 +523,13 @@ input[type="text"]{
   .nav-item:nth-child(2){
     .dropdown{
       flex-direction: column !important;
+    }
+  }
+
+  .header__nav{
+    .nav-link{
+      padding-top: 15px !important;
+      padding-bottom: 15px !important;
     }
   }
 }
@@ -562,14 +578,86 @@ input[type="text"]{
   }
 
   .header__nav{
-    display: none !important;
+    .nav{
+      flex-direction: column;
+      position: fixed;
+      width: 250px;
+      height: 100vh;
+      z-index: 999999;
+      top: 0;
+      right: -250px;
+      background-color: #fff;
+      justify-content: start !important;
+
+      .nav-link{
+        color: #999;
+        display: flex;
+        justify-content: space-between;
+        
+        .bx{
+          font-size: 20px;
+          transform: rotate(-90deg);
+        }
+
+        &:hover{
+          color: $bg-header-btn;
+          background-color: transparent;
+        }
+
+        &.active{
+          color: $bg-header-btn !important;
+          background-color: #fff;
+        }
+      }
+
+      .nav-item{
+        border-bottom: 1px dashed #000;
+      }
+
+      .nav-item-hidden{
+        display: block;
+        position: relative;
+        background-color: $bg-header-btn;
+        padding: 15px 10px;
+
+        .bx{
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #fff;
+        }
+      }
+    }
   }
 
   .menu{
     display: block;
     margin-left: 15px;
   }
+
+  .nav-item{
+    position: relative;
+
+    .dropdown{
+      display: none !important;
+    }
+
+    .drop-box{
+      display: none !important;
+    }
+  }
+
+  .body-move{
+    left: -250px;
+  }
+
+  .move-it{
+    right: 0 !important;
+  }
 }
+
+
 
 @media screen and (max-width: 576px) {
   .header__logo-box{
