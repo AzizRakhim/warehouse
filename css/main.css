@@ -1723,7 +1723,7 @@ input[type="text"]:focus {
 }
 
 #deal {
-  padding-top: 250px;
+  padding-top: 40px;
   padding-bottom: 100px;
 }
 
@@ -2050,6 +2050,10 @@ input[type="text"]:focus {
     top: 20%;
     right: 10px;
   }
+}
+
+#img-bg {
+  padding-top: 250px;
 }
 
 .img__bg {
