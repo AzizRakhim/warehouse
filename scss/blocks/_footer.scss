@@ -1,0 +1,124 @@
+
+.footer__top-menu {
+    padding: 50px 0;
+
+    ul {
+        @include list-style;
+
+        h4 {
+            font-size: 15px;
+            color: #222;
+            margin-bottom: 16px;
+            font-family: Poppins, HelveticaNeue, Helvetica Neue, sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .contact__item{
+            margin-bottom: 15px;
+        }
+
+        li{
+            margin-bottom: 10px;
+
+            .bx{
+                margin-right: 10px;
+                color: $text-color;
+                font-size: 20px;
+            }
+            
+            a{
+                color: $text-color
+            }
+        }
+
+        a {
+            @include text-none;
+        }
+    }
+}
+
+.footer__bottom{
+    background-color: #f0f0f0;
+
+    span{
+        font-weight: bold;
+        color: $text-color;
+        font-size: 12px;
+    }
+
+    .footer__bottom-menu{
+        padding: 30px 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer__top{
+        flex-direction: column;
+    }
+
+    .footer__top-list:nth-child(1){
+        margin-bottom: 30px !important;
+    }
+    .footer__top-list:nth-child(2){
+        margin-bottom: 30px !important;
+    }
+    .footer__top-list:nth-child(3){
+        margin-bottom: 30px !important;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .footer__top-list:nth-child(1){
+        margin-right: 60px !important;
+    }
+    .footer__top-list:nth-child(3){
+        margin-right: 60px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer__top{
+        flex-direction: column;
+    }
+
+    .footer__bottom-menu{
+        flex-direction: column;
+    }
+    .ftr__bottom{
+        margin-bottom: 10px;
+    }
+
+    .footer__top-list{
+        width: 100%;
+        margin-bottom: 220px;
+    }
+
+    .footer__top-list:nth-child(1){
+        margin-bottom: 30px !important;
+    }
+    .footer__top-list:nth-child(2){
+        margin-bottom: 30px !important;
+    }
+    .footer__top-list:nth-child(3){
+        margin-bottom: 30px !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer__top-list{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .footer__top-list{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .footer__top-list{
+        width: 100%;
+    }
+}
