@@ -2052,6 +2052,10 @@ input[type="text"]:focus {
   }
 }
 
+#product {
+  padding-top: 250px;
+}
+
 .product {
   border-top: 1px solid #666;
   margin-top: 50px;
@@ -2507,7 +2511,7 @@ input[type="text"]:focus {
 }
 
 #img-bg {
-  padding-top: 250px;
+  padding-top: 50px;
 }
 
 .img__bg {
