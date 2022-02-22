@@ -364,11 +364,224 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.container {
-  width: 100%;
-  max-width: 1230px;
-  padding: 0 15px;
-  margin: 0 auto;
+.footer__top-menu {
+  padding: 50px 0;
+}
+
+.footer__top-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__top-menu ul h4 {
+  font-size: 15px;
+  color: #222;
+  margin-bottom: 16px;
+  font-family: Poppins, HelveticaNeue, Helvetica Neue, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer__top-menu ul .contact__item {
+  margin-bottom: 15px;
+}
+
+.footer__top-menu ul li {
+  margin-bottom: 10px;
+}
+
+.footer__top-menu ul li .bx {
+  margin-right: 10px;
+  color: #666;
+  font-size: 20px;
+}
+
+.footer__top-menu ul li a {
+  color: #666;
+}
+
+.footer__top-menu ul a {
+  text-decoration: none;
+}
+
+.footer__bottom {
+  background-color: #f0f0f0;
+}
+
+.footer__bottom span {
+  font-weight: bold;
+  color: #666;
+  font-size: 12px;
+}
+
+.footer__bottom .footer__bottom-menu {
+  padding: 30px 0;
+}
+
+@media screen and (max-width: 576px) {
+  .footer__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__bottom-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ftr__bottom {
+    margin-bottom: 10px;
+  }
+  .footer__top-list {
+    width: 100%;
+    margin-bottom: 220px;
+  }
+  .footer__top-list:nth-child(1) {
+    margin-bottom: 30px !important;
+  }
+  .footer__top-list:nth-child(2) {
+    margin-bottom: 30px !important;
+  }
+  .footer__top-list:nth-child(3) {
+    margin-bottom: 30px !important;
+  }
+}
+
+#email {
+  background-color: #105caa;
+}
+
+#email .email__inner {
+  padding: 30px 0;
+}
+
+#email .email__inner .news {
+  font-size: 1.8rem;
+  color: #fff;
+  font-family: Poppins, HelveticaNeue, Helvetica Neue, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+
+#email .email__inner .email__ipt {
+  max-width: 370px;
+  height: 46px;
+  border: none;
+  padding: 4px 250px 4px 15px;
+  font-size: 11px;
+  font-family: Roboto, HelveticaNeue, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  background: #fff;
+  border-radius: 30px;
+}
+
+#email .email__inner .email__input:focus {
+  outline: none;
+}
+
+#email .email__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#email .email__list li {
+  margin-right: 0px;
+  font-size: 25px;
+}
+
+#email .email__list li a {
+  color: #fff;
+}
+
+#email .email__list li a :hover {
+  color: #da465b;
+}
+
+#email .email__list li .bx {
+  margin-right: 15px;
+}
+
+.inputt {
+  width: 100% !important;
+  max-width: 370px !important;
+}
+
+.email__input {
+  position: relative;
+}
+
+.email__input .button__email {
+  position: absolute;
+  right: 3px;
+  height: 42px;
+  font-family: Roboto, HelveticaNeue, Helvetica Neue, sans-serif;
+  font-size: 11px;
+  color: #fff;
+  font-weight: 700;
+  padding: 0 17px;
+  background: #105caa;
+  border: none;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .email__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .email__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .news {
+    text-align: center;
+    margin-right: 0 !important;
+    margin-bottom: 10px !important;
+  }
+  .email__list {
+    text-align: center;
+    margin: 0 auto !important;
+    margin-bottom: 10px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .email__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .email__input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .button__email {
+    position: absolute;
+  }
+  .email__list {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .email__ipt {
+    width: 100%;
+    max-width: 360px;
+    padding-right: 150px !important;
+  }
 }
 
 .img__bg {
@@ -381,5 +594,11 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .img__bg {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

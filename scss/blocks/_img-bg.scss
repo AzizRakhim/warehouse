@@ -10,3 +10,9 @@
     padding: 0;
 }
 
+
+@media screen and (max-width: 576px) {
+    .img__bg{
+        width: 100%;
+    }
+}

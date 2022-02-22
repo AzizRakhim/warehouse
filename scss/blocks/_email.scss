@@ -1,0 +1,136 @@
+#email {
+    background-color: $bg-header-btn;
+
+    .email__inner {
+        padding: 30px 0;
+
+        .news {
+            font-size: 1.8rem;
+            color: #fff;
+            font-family: Poppins, HelveticaNeue, Helvetica Neue, sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-right: 30px;
+        }
+
+        .email__ipt {
+            max-width: 370px;
+            height: 46px;
+            border: none;
+            padding: 4px 250px 4px 15px;
+            font-size: 11px;
+            font-family: Roboto, HelveticaNeue, Helvetica Neue, sans-serif;
+            font-weight: 400;
+            background: $bg-color;
+            border-radius: 30px;
+        }
+
+        .email__input:focus{
+            outline: none
+        }
+    }
+
+    .email__list {
+        @include list-style;
+
+        li {
+            margin-right: 0px;
+            font-size: 25px;
+
+            a{
+                color: $bg-color;
+
+                :hover{
+                    color: $red-color;
+                }
+            }
+
+            .bx{
+               margin-right: 15px; 
+            }
+        }
+    }
+}
+
+.inputt{
+    width: 100% !important;
+    max-width: 370px !important;
+}
+
+.email__input {
+    position: relative;
+
+    .button__email {
+        position: absolute;
+        right: 3px;
+        // top: 2px;
+        height: 42px;
+        font-family: Roboto, HelveticaNeue, Helvetica Neue, sans-serif;
+        font-size: 11px;
+        color: #fff;
+        font-weight: 700;
+        padding: 0 17px;
+        background: $bg-header-btn;
+        border: none;
+        border-radius: 30px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .email__inner{
+        display: flex;
+    }
+
+
+}
+
+
+@media screen and (max-width: 770px) {
+    .email__inner{
+        flex-direction: column;
+    }
+
+    .news{
+        text-align: center;
+        margin-right: 0 !important;
+        margin-bottom: 10px !important;
+    }
+
+    .email__list{
+        text-align: center;
+        margin: 0 auto !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .email__list{
+        justify-content: center;
+    }
+
+    .email__input{
+        flex-direction: column;
+    } 
+
+    .button__email{
+        position: absolute;
+        // top: 10px;
+    }
+
+    .email__list{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    // .email__list{
+    //     width: 395px;
+    //     max-width: 100%;
+    // }
+
+    .email__ipt{
+        width: 100%;
+        max-width: 360px;
+        padding-right: 150px !important;
+    }
+}
