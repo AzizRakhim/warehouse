@@ -2052,22 +2052,7 @@ input[type="text"]:focus {
   }
 }
 
-#img-bg {
-  padding-top: 250px;
-}
-
-.img__bg {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.big__container {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 0;
-
-  .product {
+.product {
   border-top: 1px solid #666;
   margin-top: 50px;
   padding-top: 66px;
@@ -2298,7 +2283,7 @@ input[type="text"]:focus {
 }
 
 .product__coast {
-  color: #000;
+  color: #222;
   font-size: 14px;
   font-weight: 700;
   margin-right: 10px;
@@ -2345,7 +2330,7 @@ input[type="text"]:focus {
 .bxs-shopping-bag {
   position: relative;
   top: 4px;
-  color: #000;
+  color: #222;
   font-size: 18px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -2519,5 +2504,21 @@ input[type="text"]:focus {
   .product__img-six {
     height: 200px;
   }
+}
+
+#img-bg {
+  padding-top: 250px;
+}
+
+.img__bg {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.big__container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0;
 }
 /*# sourceMappingURL=main.css.map */
