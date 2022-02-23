@@ -72,6 +72,10 @@
 }
 
 @media screen and (max-width: 992px) {
+    #accessory{
+        padding-top: 0 !important;
+    }
+
     .accessory__list {
         flex-direction: column;
     }

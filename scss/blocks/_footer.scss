@@ -122,3 +122,7 @@
         width: 100%;
     }
 }
+
+input[type="email"]:focus{
+    outline: none !important;
+}
