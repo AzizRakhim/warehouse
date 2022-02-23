@@ -28,7 +28,12 @@
             }
             
             a{
-                color: $text-color
+                color: $text-color;
+                transition: all 0.4s ease;
+
+                &:hover{
+                    color: $bg-header-btn;
+                }
             }
         }
 

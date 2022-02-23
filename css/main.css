@@ -1757,6 +1757,12 @@ input[type="text"]:focus {
 
 .footer__top-menu ul li a {
   color: #666;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.footer__top-menu ul li a:hover {
+  color: #105caa;
 }
 
 .footer__top-menu ul a {
